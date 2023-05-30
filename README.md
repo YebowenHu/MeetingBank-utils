@@ -10,7 +10,7 @@ MeetingBank, a benchmark dataset created from the city councils of 6 major U.S. 
 
 Please cite the following paper in work that makes use of this dataset:
 
-[MeetingBank: A Benchmark Dataset for Meeting Summarization]()\
+[MeetingBank: A Benchmark Dataset for Meeting Summarization](https://arxiv.org/abs/2305.17529)\
 Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
 In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
 

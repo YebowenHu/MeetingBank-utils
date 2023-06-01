@@ -12,7 +12,7 @@ This script is used to evaluate the performance of the system generated summarie
 
 1. Following instrucions to install [SummerTime](https://github.com/Yale-LILY/SummerTime). Check my installation records [here](https://hybw.notion.site/Installation-of-SummerTime-239c35be3ae045ac8fe195c40b086c37) to find some helpful tips.
 
-2. Add [downloaded](https://zenodo.org/record/7989108) model generate data to the "data/", run the following command
+2. Add model generate data from [Zenodo](https://zenodo.org/record/7989108) to the "data/", run the following command
 
 ```
 python ResultsEval.py data/<system_results>.json

@@ -43,7 +43,7 @@ In main conference of Association for Computational Linguistics (ACL'23), Toront
 
 MeetingBank dataset will be hosted at Zenodo. Dataset will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
 
-**The download link will be available at**: [zenodo](https://zenodo.org/record/7989108)
+**Download link for transcripts**: [zenodo](https://zenodo.org/record/7989108).
 
 **Meeting Videos**: All meeting videos can be found in https://archive.org/
 - [Alameda](https://archive.org/details/meetingbank-alameda)

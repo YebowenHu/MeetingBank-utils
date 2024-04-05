@@ -14,32 +14,27 @@ This script is used to evaluate the performance of the system generated summarie
 
 2. Add model generate data from [Zenodo](https://zenodo.org/record/7989108) to the "data/", run the following command
 
-```
+```bash
 python ResultsEval.py data/<system_results>.json
 ```
 
-## Acknowledgement
+## Dataset 
+We have uploaded the dataset on [Huggingface](https://huggingface.co/datasets/huuuyeah/meetingbank) to enable more convenient access to MeetingBank in your research.
+```python
+from datasets import load_dataset
+meetingbank = load_dataset("huuuyeah/meetingbank")
 
-Please cite the following paper in work that uses this dataset:
+train_data = meetingbank['train']
+test_data = meetingbank['test']
+val_data = meetingbank['validation']
 
-[MeetingBank: A Benchmark Dataset for Meeting Summarization](https://arxiv.org/abs/2305.17529)\
-Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
-In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.
-
-### Bibtex
-```
-@inproceedings{hu-etal-2023-meetingbank,
-    title = "MeetingBank: A Benchmark Dataset for Meeting Summarization",
-    author = "Yebowen Hu and Tim Ganter and Hanieh Deilamsalehy and Franck Dernoncourt and Hassan Foroosh and Fei Liu",
-    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
-    month = July,
-    year = "2023",
-    address = "Toronto, Canada",
-    publisher = "Association for Computational Linguistics",
-}
+def generator(data_split):
+  for instance in data_split:
+    yiled instance['id'], instance['summary'], instance['transcript']
 ```
 
-## Download
+
+## Resources
 
 MeetingBank dataset will be hosted at Zenodo. Dataset will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
 
@@ -55,3 +50,24 @@ MeetingBank dataset will be hosted at Zenodo. Dataset will includes meeting audi
 
 
 **Meeting Audios**: [HuggingFace](https://huggingface.co/datasets/huuuyeah/MeetingBank_Audio)
+
+## Acknowledgement
+
+Please cite the following paper in work that uses this dataset:
+
+[MeetingBank: A Benchmark Dataset for Meeting Summarization](https://arxiv.org/abs/2305.17529)\
+Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
+*In main conference of Association for Computational Linguistics (ACL'23), Toronto, Canada.*
+
+### Bibtex
+```
+@inproceedings{hu-etal-2023-meetingbank,
+    title = "MeetingBank: A Benchmark Dataset for Meeting Summarization",
+    author = "Yebowen Hu and Tim Ganter and Hanieh Deilamsalehy and Franck Dernoncourt and Hassan Foroosh and Fei Liu",
+    booktitle = "Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics (ACL)",
+    month = July,
+    year = "2023",
+    address = "Toronto, Canada",
+    publisher = "Association for Computational Linguistics",
+}
+```

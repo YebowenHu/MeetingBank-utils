@@ -1,10 +1,10 @@
 # MeetingBank-utils
 
-Utils to pre-process meetingbank data and reproduce results. [HomePage](https://meetingbank.github.io/dataset/)
+Utils to pre-process meetingbank data and reproduce results. ([Home page](https://meetingbank.github.io/dataset/), [ACL 2023 paper](https://aclanthology.org/2023.acl-long.906.pdf)).
 
 ## Overview
 
-MeetingBank, a benchmark dataset created from the city councils of 6 major U.S. cities to supplement existing datasets. It contains 1,366 meetings with over 3,579 hours of video, as well as transcripts, PDF documents of meeting minutes, agenda, and other metadata. On average, a council meeting is 2.6 hours long and its transcript contains over 28k tokens, making it a valuable testbed for meeting summarizers and for extracting structure from meeting videos. The datasets contains 6,892 segment-level summarization instances for training and evaluating of performance. 
+MeetingBank is a benchmark dataset created from the city councils of 6 major U.S. cities to supplement existing datasets. It contains 1,366 meetings with over 3,579 hours of video, as well as transcripts, PDF documents of meeting minutes, agenda, and other metadata. On average, a council meeting is 2.6 hours long and its transcript contains over 28k tokens, making it a valuable testbed for meeting summarizers and for extracting structure from meeting videos. The datasets contains 6,892 segment-level summarization instances for training and evaluating of performance. 
 
 ## ResultsEval.py
 
@@ -20,7 +20,7 @@ python ResultsEval.py data/<system_results>.json
 
 ## Acknowledgement
 
-Please cite the following paper in work that makes use of this dataset:
+Please cite the following paper in work that uses this dataset:
 
 [MeetingBank: A Benchmark Dataset for Meeting Summarization](https://arxiv.org/abs/2305.17529)\
 Yebowen Hu, Tim Ganter, Hanieh Deilamsalehy, Franck Dernoncourt, Hassan Foroosh, Fei Liu\
@@ -43,7 +43,7 @@ In main conference of Association for Computational Linguistics (ACL'23), Toront
 
 MeetingBank dataset will be hosted at Zenodo. Dataset will includes meeting audio, transcripts, meetingbank main JSON file, summaries from 6 systems and human annotations.
 
-**The download link will be available at**: [zenodo](https://zenodo.org/record/7989108)
+**Download link for transcripts**: [zenodo](https://zenodo.org/record/7989108).
 
 **Meeting Videos**: All meeting videos can be found in https://archive.org/
 - [Alameda](https://archive.org/details/meetingbank-alameda)
